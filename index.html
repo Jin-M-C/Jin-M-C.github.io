@@ -52,7 +52,7 @@
                     ['\\[', '\\]']
                 ],
                 processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx}0outside math mode
+                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
                 processRefs: true,         // process \ref{...} outside of math mode
                 digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
                 tags: 'all',              // or 'ams' or 'all'
@@ -74,12 +74,11 @@
     <!-- Core JS-->
     <script type="text/javascript" src="static_js/scripts.js"></script>
     <script type="text/javascript" src="static_js/js-yaml.min.js"></script>
-
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="header navbar navbarExpand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
             <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top">Jin Mincheng</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs_target="#navbarResponsive"
@@ -87,18 +86,23 @@
                 MENU
                 <i="bi-list"></i>
             </button>
-            <div="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="#page-top">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
+                        <a class="nav-link me-lg-3" href="publications.html">PUBLICATIONS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
+                        <a class="nav-link me-lg-3" href="awards.html">AWARDS</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="about-me.html">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="upload.html">UPLOAD FILE</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -106,32 +110,29 @@
 
     <!-- Top Section -->
     <section class="top-section" style="background-image: url('static_assets_image/background.jpeg');">
-        <div="top-section-content">
-            <div="container px-5">
+        <div class="top-section-content">
+            <div class="container px-5">
                 <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt">Welcome to Jin Mincheng's Website</h2>
             </div>
         </div>
     </section>
-    <!-- Top Section -->
 
     <!-- Photo -->
-    <div="container px-5">
+    <div class="container px-5">
         <div id="avatar">
             <img class="shadow" src="static_assets_image/photo.jpeg">
         </div>
     </div>
-    <!-- Photo -->
 
     <!-- Home -->
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div="container px-5">
+        <div class="container px-5">
             <header>
                 <h2 id="home-subtitle">Hi, I'm Jin Mincheng, a freshman majoring in Computer Science and Technology at Beijing Jiaotong University. This is my personal website where I'll share my achievements and works in the future.</h2>
             </header>
-            <div="main-body" id="home-md"></div>
-        </div>
+            <div class="main-body" id="home-md"></div>
+        </2>
     </section>
-    <!-- Home -->
 
     <!-- Publications -->
     <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
@@ -144,21 +145,18 @@
             </div>
         </div>
     </section>
-    <!-- Publications  -->
 
     <!-- Awards -->
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
         <div="container px-5">
             <header>
-                <i="bi bi-award-fill"></i>AWARDS
+                <h2 id="awards-subtitle"><i="bi bi-award-fill"></i>AWARDS </h>
             </header>
             <div="main-body" id="awards-md">
                 <p>No awards yet, but I'm working towards it!</p>
             </div>
         </div>
     </section>
-    <!-- Awards -->
-
 
     <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
@@ -168,8 +166,10 @@
                 <a id="github-link" href="https://github.com/Jin-M-C">Github</a>
                 <span="mx-1">&middot;</span>
                 <a id="license-link" href="https://github.com/Jin-M-C/Jin-M-C.github.io/blob/main/LICENSE">License</a>
-            </div>
+            </2>
         </div>
     </footer>
 
 </body>
+
+</html>
