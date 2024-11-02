@@ -8,10 +8,8 @@
     <meta name="author" content="Jin Mincheng" />
     <title id="title">Jin Mincheng's Personal Website</title>
 
-    <!-- 引用styles.css，路径修改为static_css -->
-    <link type="text/css" href="static_css/styles.css" rel="stylesheet" />
-    <!-- 引用main.css，路径修改为static_css -->
-    <link type="text/css" href="static_css/main.css" rel="stylesheet" />
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="static_assets_image/favicon.ico" />
 
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -26,7 +24,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap"
         rel="stylesheet" />
 
-    <!-- Bootstrap core JS，路径修改为static_js -->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link type="text/css" href="static_css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="static_css/main.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JS-->
     <script type="text/javascript" src="static_js/bootstrap.bundle.min.js"></script>
 
     <!-- For Compatability -->
@@ -40,51 +42,52 @@
         // See https://docs.mathjax.org/en/latest/index.html for more details.
         MathJax = {
             tex: {
-                packages: {}, // extensions to use
-                inlineMath: [ // start/end delimiter pairs for in-line math
+                packages: {},              // extensions to use
+                inlineMath: [              // start/end delimiter pairs for in-line math
                     ['$', '$'],
                     ['\\(', '\\)']
                 ],
-                displayMath: [ // start/end delimiter pairs for display math
+                displayMath: [             // start/end delimiter pairs for display math
                     ['$$', '$$'],
                     ['\\[', '\\]']
                 ],
-                processEscapes: false, // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true, // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/, // pattern for recognizing numbers
-                tags: 'all', // or 'ams' or 'all'
-                tagSide: 'right', // side for \tag macros
-                tagIndent: '0.8em', // amount to indent tags
-                useLabelIds: true, // use label name rather than tag for ids
-                maxMacros: 10000, // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024, // maximum size for the internal TeX string (5K)
-                // baseURL: // URL for use with links to tags (when there is a <base> tag in effect)
+                processEscapes: false,      // use \$ to produce a literal dollar sign
+                processEnvironments: true, // process \begin{xxx}...\end{xxx}0outside math mode
+                processRefs: true,         // process \ref{...} outside of math mode
+                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
+                tags: 'all',              // or 'ams' or 'all'
+                tagSide: 'right',          // side for \tag macros
+                tagIndent: '0.8em',        // amount to indent tags
+                useLabelIds: true,         // use label name rather than tag for ids
+                maxMacros: 10000,          // maximum number of macro substitutions per expression
+                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
+                // baseURL:                   // URL for use with links to tags (when there is a base> tag in effect)
                 // (document.getElementsByTagName('base').length === 0)? '' : String(document.location).replace(/#.*$/, ''),
-                formatError: // function called when TeX syntax errors occur
+                formatError:               // function called when TeX syntax errors occur
                     (jax, err) => jax.formatError(err)
             }
         };
     </script>
     <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJ0x-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <!-- Core JS，路径修改为static_js -->
+    <!-- Core JS-->
     <script type="text/javascript" src="static_js/scripts.js"></script>
     <script type="text/javascript" src="static_js/js-yaml.min.js"></script>
+
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <nav class="header navbar navbarExpand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
             <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top">Jin Mincheng</a>
-            <button class="navbar-toggler" type="javascript:void(0)" data-bs-toggle="collapse" data-bs_target="#navbarResponsive"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs_target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 MENU
-                <i class="bi-list"></i>
+                <i="bi-list"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="#page-top">HOME</a>
@@ -95,12 +98,7 @@
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#projects">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#about-me">ABOUT ME</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -108,38 +106,32 @@
 
     <!-- Top Section -->
     <section class="top-section" style="background-image: url('static_assets_image/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt">Computer Science</h2>
-            </div>
-        </div>
-    </section>
-
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static_assets_image/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
+        <div="top-section-content">
+            <div="container px-5">
                 <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt">Welcome to Jin Mincheng's Website</h2>
             </div>
         </div>
     </section>
+    <!-- Top Section -->
 
     <!-- Photo -->
-    <div class="container px-5">
+    <div="container px-5">
         <div id="avatar">
             <img class="shadow" src="static_assets_image/photo.jpeg">
-        </2>
+        </div>
     </div>
+    <!-- Photo -->
 
     <!-- Home -->
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
+        <div="container px-5">
             <header>
-                <h2 id="home-subtitle">Hi, I'm Jin Mincheng, a freshman majoring in Computer Science and Technology at Beijing Jiaotong University. This is my personal website where I'll share my achievements and works.</h2>
+                <h2 id="home-subtitle">Hi, I'm Jin Mincheng, a freshman majoring in Computer Science and Technology at Beijing Jiaotong University. This is my personal website where I'll share my achievements and works in the future.</h2>
             </header>
             <div="main-body" id="home-md"></div>
         </div>
     </section>
+    <!-- Home -->
 
     <!-- Publications -->
     <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
@@ -147,77 +139,37 @@
             <header>
                 <h2 id="publications-subtitle"><i="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
             </header>
-        <div="main-body" id="publications-md">
-            <!-- 这里可以添加你发布的论文相关信息，比如论文标题、链接、摘要等 -->
-            <p>Here you can list your publications once you have them:</p>
-            <ul>
-                <li>
-                    <p>There are no publications yet. Stay tuned!</p>
-                </li>
-            </ul>
+            <div="main-body" id="publications-md">
+                <p>There are no publications yet. Stay tuned!</p>
+            </div>
         </div>
     </section>
+    <!-- Publications  -->
 
     <!-- Awards -->
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div="="container px-5">
+        <div="container px-5">
             <header>
-                <h2 id="awards-subtitle"><i="bi bi-award-fill"></i>AWARDS </h2>
+                <i="bi bi-award-fill"></i>AWARDS
             </header>
             <div="main-body" id="awards-md">
-                <!-- 这里可以添加你获得的奖励相关信息，比如奖励名称、颁发机构、获奖时间等 -->
-                <p>Here are the awards I've received:</p>
-                <ul>
-                    <li>
-                        <p>No awards yet, but I'm working towards it!</p>
-                    </li>
-                </ul>
+                <p>No awards yet, but I'm working towards it!</p>
             </div>
         </div>
     </section>
+    <!-- Awards -->
 
-    <!-- Projects -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="projects">
-        <div="container px-5">
-            <header>
-                <h2 id="projects-subtitle"><i="bi bi-code-slash"></i>&nbsp;PROJECTS</h2>
-            </header>
-            <div="main-body" id="projects-md">
-                <!-- 这里可以添加你参与的项目相关信息，比如项目名称、项目描述、项目链接等 -->
-                <p>Here you can list your projects:</p>
-                <ul>
-                    <li>
-                        <p>There are no projects listed yet. Looking forward to sharing some amazing projects in the future!</p>
-                </li>
-            </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Me -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="about-me">
-        <div="container px-5">
-            <header>
-                <h2 id="about-me-subtitle"><i="bi bi-person-fill"></i>&nbsp;ABOUT ME</h2>
-            </header>
-            <div="main-body" id="about-me-md">
-                <p>Hello! I'm Jin Mincheng, currently a freshman studying Computer Science and Technology at Beijing Jiaotong University. I'm passionate about the world of computing and eager to learn and explore more in this field. I'm looking forward to sharing my journey, achievements, and projects with you all through this website.</p>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
         <div="container px-5">
             <div="text-white-50 small">
                 <div id="copyright-text" class="mb-2">Copyright © Jin Mincheng</div>
-                <a id="github-link" href="https://github.com/[Your GitHub Username]">Github</a>
+                <a id="github-link" href="https://github.com/Jin-M-C">Github</a>
                 <span="mx-1">&middot;</span>
-                <a id="lemma_link" href="https://github.com/[Your GitHub Username]/[Your Repository Name]/blob/main/LICENSE">License</a>
+                <a id="license-link" href="https://github.com/Jin-M-C/Jin-M-C.github.io/blob/main/LICENSE">License</a>
             </div>
         </div>
     </footer>
 
 </body>
-
-</html>
